@@ -12,19 +12,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local,
-      entertainment,
-      health,
-      science,
-      technology
+       currentPage: local
     }
   }
 
-  render () {
+  changeCurrentPage = (type) => {
+    this.setState({currentPage: type})
+  }
+
+  render() {
     return (
       <div className="app">
-        <Menu />
-        <NewsContainer data={this.state.local}/>
+        <Menu changeCurrentPage={this.changeCurrentPage}/>
+        <NewsContainer data={this.state.currentPage}/>
       </div>
     );
   }
