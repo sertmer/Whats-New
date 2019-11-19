@@ -4,18 +4,19 @@ import NewsArticle from '../NewsArticle/NewsArticle';
 
 const NewsContainer = ({data}) => {
   let articles = data.map(story => {
-  let {id, headline, description, img} = story
+  let {id, headline, description, img, url} = story
     return (
       <NewsArticle 
         key={id} 
         headline={headline} 
-        // description={description}
-        // img={img}
+        description={description}
+        img={img}
+        url={url}
       />
     )
   })
   return (
-    <section>
+    <section className='article-container'>
       {articles}
     </section>
   )
