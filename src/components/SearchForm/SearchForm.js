@@ -10,7 +10,7 @@ const SearchForm = (props) => {
         placeholder='Search for news here'
         className='search-input'>
       </input>
-      <button className='search-submit'>Submit</button>
+      <button className='search-submit'>Search</button>
     </nav>
   )
 }
