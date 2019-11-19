@@ -1,9 +1,26 @@
 img {
-  height: 150px;
-  width: 200px;
+  height: 300px;
+  width: 500px;
+  padding: 10px;
 }
 
 .article {
-  width: 50%;
+  margin: 2%;
+  width: 45%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-div {
+  background-color: #7d48a8;
+  font-size: x-large;
+  color: #ffffff;
+  padding: 1%;
+}
+
+.article-title {
+  font-size: x-large;
+  color: black;
 }
