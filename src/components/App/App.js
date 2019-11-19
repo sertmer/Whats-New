@@ -7,6 +7,7 @@ import technology from '../../data/technology'
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer'
 import Menu from '../Menu/Menu'
+import SearchForm from '../SearchForm/SearchForm'
 
 class App extends Component {
   constructor() {
@@ -23,6 +24,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <SearchForm />
+        <main>
         <Menu 
           changeCurrentPage={this.changeCurrentPage}
           local={local}
@@ -31,6 +34,7 @@ class App extends Component {
           science={science}
           technology={technology}/>
         <NewsContainer data={this.state.currentPage}/>
+        </main>
       </div>
     );
   }
