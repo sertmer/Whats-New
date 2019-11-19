@@ -1,6 +1,17 @@
 import React from 'react';
 import './SearchForm.css';
 
-// SEARCHFORM COMPONENT CODE GOES HERE
-
+const SearchForm = (props) => {
+  return (
+    <nav className='nav'>
+      <h1>What's <span> New? </span></h1>
+      <input 
+        type='text' 
+        placeholder='Search for news here'
+        className='search-input'>
+      </input>
+      <button className='search-submit'>Submit</button>
+    </nav>
+  )
+}
 export default SearchForm;
