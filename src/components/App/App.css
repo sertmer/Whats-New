@@ -10,4 +10,10 @@
   height: 100vh;
   text-align: center;
   width: 100%;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
