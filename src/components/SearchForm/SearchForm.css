@@ -1,14 +1,39 @@
-.search {
+.nav {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  height: 5vh;
 }
 
 h1 {
-  margin: 10px;
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
   font-size: xx-large;
+  padding: 10px;
 }
 
 span {
   color: #f08623;
+}
+
+.search-input {
+  width: 80%;
+  background-color: #141527;
+  border: none;
+  border-radius: 50px;
+  font-size: larger;
+  color: #7e7d7d;
+  padding: 20px 20px;
+  margin: 10px;
+}
+
+.search-submit {
+  width: 10%;
+  height: 5vh;
+  border-radius: 50px;
+  background-color: #7d48a8;
+  color: #ffffff;
+  font-size: larger;
+  margin-top: 10px;
 }
