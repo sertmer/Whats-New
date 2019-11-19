@@ -9,7 +9,7 @@ const NewsArticle = (props) => {
       <p>{props.description}</p>
       <div>
         <p>Link to Article</p>
-        <a href={props.url}></a>
+        <a href={props.url}></∫a>
       </div>
     </article>
   )
