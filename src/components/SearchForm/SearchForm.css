@@ -1,0 +1,14 @@
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  margin: 10px;
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+span {
+  color: #f08623;
+}
