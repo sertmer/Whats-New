@@ -23,7 +23,13 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Menu changeCurrentPage={this.changeCurrentPage}/>
+        <Menu 
+          changeCurrentPage={this.changeCurrentPage}
+          local={local}
+          entertainment={entertainment}
+          health={health}
+          science={science}
+          technology={technology}/>
         <NewsContainer data={this.state.currentPage}/>
       </div>
     );
