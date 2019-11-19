@@ -20,3 +20,13 @@
   border-color: #f08623;
   background-color: #f08623;
 }
+
+h1 {
+  margin: 10px;
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+span {
+  color: #f08623;
+}
