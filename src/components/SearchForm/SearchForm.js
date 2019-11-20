@@ -4,7 +4,6 @@ import './SearchForm.css';
 class SearchForm extends Component {
   constructor(props) {
     super(props)
-    console.log(props);
     this.state = {
       search: '',
     }
@@ -12,6 +11,11 @@ class SearchForm extends Component {
 
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value })
+  }
+
+  handleClick = (query) => {
+    this.props.searchCurrentPage(query)
+    this.setState({search: ''})
   }
 
   render() { 
@@ -28,7 +32,7 @@ class SearchForm extends Component {
       </input>
       <button 
         className='search-submit' 
-        onClick={() => this.props.searchCurrentPage(this.state.search)}>
+        onClick={() => this.handleClick(this.state.search)}>
         Search
         </button>
     </nav>
