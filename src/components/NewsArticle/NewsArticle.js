@@ -5,7 +5,7 @@ const NewsArticle = ({ headline, description, img, url}) => {
   return (
     <article className='article'>
       <div>
-        <img src={img}/>
+        <img src={img} alt=''/>
       </div>
       <h1 className='article-title'>{headline}</h1>
       <p className='article-description'>{description}</p>
