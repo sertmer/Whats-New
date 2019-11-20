@@ -4,18 +4,10 @@ import './SearchForm.css';
 class SearchForm extends Component {
   constructor(props) {
     super(props)
-
+    console.log(props);
     this.state = {
       search: '',
     }
-  }
-  
-  searchCurrentPage = (query) => {
-    const capitalQuery = query.toUpperCase()
-    console.log(capitalQuery);
-    this.state.currentPage.filter(story => {
-      return story.title.contains(capitalQuery)
-    })
   }
 
   handleChange = event => {
@@ -34,7 +26,11 @@ class SearchForm extends Component {
         className='search-input'
         onChange={this.handleChange}>
       </input>
-      <button className='search-submit' onClick={() => this.searchCurrentPage(this.state.search)}>Search</button>
+      <button 
+        className='search-submit' 
+        onClick={() => this.props.searchCurrentPage(this.state.search)}>
+        Search
+        </button>
     </nav>
   )}
 }
