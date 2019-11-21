@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu should match the snapshot 1`] = `
+<aside
+  className="menu"
+>
+  <button
+    className="menu-btn"
+    onClick={[Function]}
+  >
+    Local News
+  </button>
+  <button
+    className="menu-btn"
+    onClick={[Function]}
+  >
+    Technology
+  </button>
+  <button
+    className="menu-btn"
+    onClick={[Function]}
+  >
+    Entertainment
+  </button>
+  <button
+    className="menu-btn"
+    onClick={[Function]}
+  >
+    Science
+  </button>
+  <button
+    className="menu-btn"
+    onClick={[Function]}
+  >
+    Health
+  </button>
+</aside>
+`;
