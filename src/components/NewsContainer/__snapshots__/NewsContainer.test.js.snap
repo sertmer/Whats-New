@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsContainer should match the snapshot with all data passed in correctly 1`] = `ShallowWrapper {}`;
+exports[`NewsContainer should match the snapshot with all data passed in correctly 1`] = `
+<section
+  className="article-container"
+>
+  <NewsArticle
+    key="1"
+  />
+</section>
+`;
