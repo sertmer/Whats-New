@@ -25,4 +25,31 @@ describe('SearchForm', () => {
     
     expect(wrapper.state('search')).toEqual('search query')
   })
+
+  it('should reset state when resetInputs is called',() => {
+    const expected = {search: ''}
+    const defaultState = {search: 'string'}
+
+    wrapper.setState(defaultState)
+    wrapper.instance().resetInputs()
+
+    expect(wrapper.state()).toEqual(expected)
+  })
+
+  it('should run handleClick when the button is clicked', () => {
+    wrapper.instance().handleClick = jest.fn()
+    wrapper.find('button').simulate('click')
+
+    expect(wrapper.instance().handleClick).toHaveBeenCalled()
+  })
+
+  it('should call searchCurrentPage & resetInputs when handleClick is invoked', () => {
+    const mockQuery = 'string'
+    wrapper.instance().resetInputs = jest.fn()
+    wrapper.instance().handleClick(mockQuery)
+
+    expect(mockSearchCurrentPage).toHaveBeenCalled()
+    expect(wrapper.instance().resetInputs).toHaveBeenCalled()
+  })
+
 })
