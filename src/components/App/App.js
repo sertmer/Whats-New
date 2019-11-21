@@ -23,7 +23,6 @@ class App extends Component {
 
   searchCurrentPage = (query) => {
     const filteredStories = this.state.currentPage.filter(story => {
-      console.log(story);
       return story.headline.includes(query)
     })
     this.setState({currentPage: filteredStories})
