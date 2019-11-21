@@ -13,8 +13,13 @@ class SearchForm extends Component {
     this.setState({ [event.target.name]: event.target.value })
   }
 
+  
   handleClick = (query) => {
     this.props.searchCurrentPage(query)
+    this.resetInputs()
+  }
+  
+  resetInputs = () => {
     this.setState({search: ''})
   }
 
