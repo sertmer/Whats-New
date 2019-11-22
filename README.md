@@ -1,4 +1,4 @@
-# What's New - A React based News Feed App
+# What's New - A React-based News Feed Application
 ### Scott Ertmer
 
 #### Setup
@@ -18,6 +18,4 @@ To use this application:
 #### Abstract
 What's New is a React based newsfeed app in which you can filter your news by type, search for a particular article and follow links to read the article.
 
-
-
-
+![Whats-New-gif-2](https://user-images.githubusercontent.com/49926352/69447798-7f089f80-0d14-11ea-9120-6303266ce0a0.gif)
